@@ -1,0 +1,15 @@
+<h1> MAIN </h1>
+<br>
+<br>
+<h3><%= link_to "Create a new User", new_user_path %></h3>
+<br>
+<p><strong> We have <%= "#{@users.size}" %> registered users. </strong></p>
+<br>
+<br>
+<ul>
+    <% @users.each do |user| %>
+    <li>
+        <%= link_to user.username, edit_user_path(user) %>
+    </li>
+    <% end %>
+</ul>

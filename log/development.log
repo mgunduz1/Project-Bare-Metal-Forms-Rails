@@ -1064,3 +1064,1151 @@ Processing by UsersController#new as HTML
 Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 3952)
 
 
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2021-04-09 16:11:21 +0300
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/lib/ruby/gems/3.0.0/gems/railties-6.1.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/lib/ruby/gems/3.0.0/gems/railties-6.1.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.4ms | Allocations: 415)
+Completed 200 OK in 12ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 3079)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-09 16:11:21 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/lib/ruby/gems/3.0.0/gems/railties-6.1.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/lib/ruby/gems/3.0.0/gems/railties-6.1.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 5.3ms | Allocations: 220)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 954)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2021-04-09 16:11:24 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2060)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.9ms | Allocations: 7814)
+Completed 200 OK in 37ms (Views: 25.9ms | ActiveRecord: 0.7ms | Allocations: 13027)
+
+
+Started POST "/users" for 127.0.0.1 at 2021-04-09 16:11:28 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"assdaf", "email"=>"asdfa", "password"=>"[FILTERED]"}, "commit"=>"Submit"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "assdaf"], ["email", "asdfa"], ["password", "asfsd"], ["created_at", "2021-04-09 13:11:28.612934"], ["updated_at", "2021-04-09 13:11:28.612934"]]
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+Redirected to http://127.0.0.1:3000/users/new
+Completed 302 Found in 22ms (ActiveRecord: 3.1ms | Allocations: 5283)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2021-04-09 16:11:28 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 9.8ms | Allocations: 663)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 56.6ms | Allocations: 3486)
+Completed 200 OK in 66ms (Views: 57.2ms | ActiveRecord: 0.0ms | Allocations: 3945)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2021-04-09 16:11:42 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/edit"):
+  
+Started GET "/users" for 127.0.0.1 at 2021-04-09 16:11:48 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/index" for 127.0.0.1 at 2021-04-09 16:13:13 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+Started GET "/index" for 127.0.0.1 at 2021-04-09 16:13:45 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+Started GET "/" for 127.0.0.1 at 2021-04-09 16:16:36 +0300
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/lib/ruby/gems/3.0.0/gems/railties-6.1.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/lib/ruby/gems/3.0.0/gems/railties-6.1.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.7ms | Allocations: 415)
+Completed 200 OK in 13ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 3178)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-09 16:16:37 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/lib/ruby/gems/3.0.0/gems/railties-6.1.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/lib/ruby/gems/3.0.0/gems/railties-6.1.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.6ms | Allocations: 220)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 1006)
+
+
+Started GET "/index" for 127.0.0.1 at 2021-04-09 16:16:41 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+Started GET "/users/new" for 127.0.0.1 at 2021-04-09 16:16:45 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1684)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 6978)
+Completed 200 OK in 27ms (Views: 17.9ms | ActiveRecord: 0.6ms | Allocations: 12200)
+
+
+Started GET "/users" for 127.0.0.1 at 2021-04-09 16:16:47 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 102)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 2938)
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 3577)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2021-04-09 16:16:56 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/edit"):
+  
+Started GET "/users/1/edit" for 127.0.0.1 at 2021-04-09 16:17:05 +0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3885)
+Completed 200 OK in 25ms (Views: 8.6ms | ActiveRecord: 0.4ms | Allocations: 7236)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2021-04-09 16:20:44 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/1"):
+  
+Started GET "/users/" for 127.0.0.1 at 2021-04-09 16:20:46 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 2871)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 3324)
+
+
+Started GET "/users/" for 127.0.0.1 at 2021-04-09 16:22:37 +0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 14.4ms | Allocations: 9091)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 9171)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.8ms | Allocations: 12789)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<ActionView::Base:0x000000000079b8>
+Did you mean?  @users):
+    3: 
+    4:   <% @users.each do |u| %>
+    5:     <p>
+    6:       <%= link_to u.username, edit_path(user) %>
+    7:     </p>
+    8:     <br>
+    9:   <% end %>
+  
+app/views/users/index.html.erb:6
+app/views/users/index.html.erb:4
+Started GET "/" for 127.0.0.1 at 2021-04-09 16:23:28 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/users/index.html.erb:4
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:4
+  Rendered users/index.html.erb within layouts/application (Duration: 16.6ms | Allocations: 8582)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 8652)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 2.5ms | Allocations: 9729)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<ActionView::Base:0x00000000008cf0>
+Did you mean?  @users):
+    3: 
+    4:   <% @users.each do |u| %>
+    5:     <p>
+    6:       <%= link_to u.username, edit_path(user) %>
+    7:     </p>
+    8:     <br>
+    9:   <% end %>
+  
+app/views/users/index.html.erb:6
+app/views/users/index.html.erb:4
+Started GET "/" for 127.0.0.1 at 2021-04-09 16:23:42 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1558)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1628)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 2822)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1> MAIN </h1>
+    2: 
+    3: 
+    4:   <% @user.each do |u| %>
+    5:     <p>
+    6:       <%= link_to u.username, edit_path(user) %>
+    7:     </p>
+  
+app/views/users/index.html.erb:4
+Started GET "/" for 127.0.0.1 at 2021-04-09 16:27:56 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  Rendered users/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1177)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 6530)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.2ms | Allocations: 7789)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2021-04-09 16:27:57 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/1"):
+  
+Started GET "/" for 127.0.0.1 at 2021-04-09 16:27:59 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  Rendered users/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 949)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 3794)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.2ms | Allocations: 4249)
+
+
+Started GET "/users/3" for 127.0.0.1 at 2021-04-09 16:28:28 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/3"):
+  
+Started GET "/" for 127.0.0.1 at 2021-04-09 16:28:50 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  Rendered users/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1107)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 4178)
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.1ms | Allocations: 5407)
+
+
+Started GET "/users/4/edit" for 127.0.0.1 at 2021-04-09 16:28:51 +0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1634)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 4393)
+Completed 200 OK in 26ms (Views: 7.6ms | ActiveRecord: 0.2ms | Allocations: 8260)
+
+
+Started PATCH "/users/4" for 127.0.0.1 at 2021-04-09 16:29:02 +0300
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"aaaaaaaa", "email"=>"ssssssss", "password"=>"[FILTERED]"}, "commit"=>"Submit", "id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:26:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `update'
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "username" = ?, "email" = ?, "password" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["username", "aaaaaaaa"], ["email", "ssssssss"], ["password", "rrrrrrr"], ["updated_at", "2021-04-09 13:29:02.865122"], ["id", 4]]
+  ↳ app/controllers/users_controller.rb:27:in `update'
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `update'
+Redirected to http://127.0.0.1:3000/users/4
+Completed 302 Found in 18ms (ActiveRecord: 3.0ms | Allocations: 5822)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2021-04-09 16:29:02 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/4"):
+  
+Started GET "/users/4/edit" for 127.0.0.1 at 2021-04-09 16:30:08 +0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 13.6ms | Allocations: 3123)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 3192)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.2ms | Allocations: 4905)
+
+
+  
+ActionView::Template::Error (undefined method `deep_stringify_keys' for "/":String):
+    27:   <%= f.text_field :email %><br>
+    28:   <%= f.label :password, "Password:" %>
+    29:   <%= f.password_field :password %><br>
+    30:   <%= f.submit "Submit", root_path %>
+    31: <% end %>
+  
+app/views/users/edit.html.erb:30
+app/views/users/edit.html.erb:23
+Started GET "/" for 127.0.0.1 at 2021-04-09 16:30:10 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  Rendered users/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1084)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 4156)
+Completed 200 OK in 16ms (Views: 12.8ms | ActiveRecord: 0.3ms | Allocations: 4736)
+
+
+Started GET "/users/6/edit" for 127.0.0.1 at 2021-04-09 16:30:12 +0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 7.5ms | Allocations: 2670)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 2774)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.3ms | Allocations: 4133)
+
+
+  
+ActionView::Template::Error (undefined method `deep_stringify_keys' for "/":String):
+    27:   <%= f.text_field :email %><br>
+    28:   <%= f.label :password, "Password:" %>
+    29:   <%= f.password_field :password %><br>
+    30:   <%= f.submit "Submit", root_path %>
+    31: <% end %>
+  
+app/views/users/edit.html.erb:30
+app/views/users/edit.html.erb:23
+Started GET "/usefdsas" for 127.0.0.1 at 2021-04-09 16:30:30 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/usefdsas"):
+  
+Started GET "/" for 127.0.0.1 at 2021-04-09 16:30:55 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  Rendered users/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1100)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 4179)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.3ms | Allocations: 5395)
+
+
+Started GET "/users/3/edit" for 127.0.0.1 at 2021-04-09 16:30:56 +0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 7.9ms | Allocations: 3097)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 3201)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.2ms | Allocations: 4681)
+
+
+  
+ActionView::Template::Error (undefined method `deep_stringify_keys' for "/users":String):
+    27:   <%= f.text_field :email %><br>
+    28:   <%= f.label :password, "Password:" %>
+    29:   <%= f.password_field :password %><br>
+    30:   <%= f.submit "Submit", users_path %>
+    31: <% end %>
+  
+app/views/users/edit.html.erb:30
+app/views/users/edit.html.erb:23
+Started GET "/" for 127.0.0.1 at 2021-04-09 16:45:29 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  Rendered users/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 4283)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 7169)
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.4ms | Allocations: 8268)
+
+
+Started GET "/users/2/edit" for 127.0.0.1 at 2021-04-09 16:45:30 +0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 10.6ms | Allocations: 2777)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 2881)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.4ms | Allocations: 4384)
+
+
+  
+ActionView::Template::Error (undefined method `deep_stringify_keys' for "/users":String):
+    27:   <%= f.text_field :email %><br>
+    28:   <%= f.label :password, "Password:" %>
+    29:   <%= f.password_field :password %><br>
+    30:   <%= f.submit "Submit", users_path %>
+    31: <% end %>
+  
+app/views/users/edit.html.erb:30
+app/views/users/edit.html.erb:23
+Started GET "/" for 127.0.0.1 at 2021-04-09 16:45:48 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  Rendered users/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1100)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 4178)
+Completed 200 OK in 15ms (Views: 13.4ms | ActiveRecord: 0.3ms | Allocations: 5394)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-09 16:45:48 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  Rendered users/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 950)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 3784)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.2ms | Allocations: 4238)
+
+
+Started GET "/users/8/edit" for 127.0.0.1 at 2021-04-09 16:45:49 +0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1123)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 4534)
+Completed 200 OK in 29ms (Views: 23.4ms | ActiveRecord: 0.2ms | Allocations: 5647)
+
+
+Started PATCH "/users/8" for 127.0.0.1 at 2021-04-09 16:45:51 +0300
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"assdaf", "email"=>"asdfa", "password"=>"[FILTERED]"}, "commit"=>"Submit", "id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:26:in `update'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 9.3ms | Allocations: 5099)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 7821)
+Completed 200 OK in 19ms (Views: 14.2ms | ActiveRecord: 0.2ms | Allocations: 9825)
+
+
+Started PATCH "/users/8" for 127.0.0.1 at 2021-04-09 16:45:59 +0300
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"assdaf", "email"=>"asdfa", "password"=>"[FILTERED]"}, "commit"=>"Submit", "id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:26:in `update'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1188)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 3935)
+Completed 200 OK in 16ms (Views: 9.6ms | ActiveRecord: 0.2ms | Allocations: 5816)
+
+
+Started PATCH "/users/8" for 127.0.0.1 at 2021-04-09 16:46:00 +0300
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"assdaf", "email"=>"asdfa", "password"=>"[FILTERED]"}, "commit"=>"Submit", "id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:26:in `update'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1188)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3935)
+Completed 200 OK in 12ms (Views: 8.3ms | ActiveRecord: 0.2ms | Allocations: 5816)
+
+
+Started PATCH "/users/8" for 127.0.0.1 at 2021-04-09 16:46:03 +0300
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"assdafasdfas", "email"=>"sadfd", "password"=>"[FILTERED]"}, "commit"=>"Submit", "id"=>"8"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:26:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `update'
+  [1m[36mUser Update (0.7ms)[0m  [1m[33mUPDATE "users" SET "username" = ?, "email" = ?, "password" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["username", "assdafasdfas"], ["email", "sadfd"], ["password", "asdf"], ["updated_at", "2021-04-09 13:46:03.795049"], ["id", 8]]
+  ↳ app/controllers/users_controller.rb:27:in `update'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `update'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 14ms (ActiveRecord: 2.8ms | Allocations: 5076)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-09 16:46:03 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  Rendered users/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 950)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 3784)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.2ms | Allocations: 4237)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-09 16:46:33 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  Rendered users/index.html.erb within layouts/application (Duration: 8.1ms | Allocations: 4678)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 7554)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.9ms | Allocations: 8653)
+
+
+Started GET "/users/5/edit" for 127.0.0.1 at 2021-04-09 16:46:35 +0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 2.2ms | Allocations: 802)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 4206)
+Completed 200 OK in 19ms (Views: 14.9ms | ActiveRecord: 0.2ms | Allocations: 5337)
+
+
+Started PATCH "/users/5" for 127.0.0.1 at 2021-04-09 16:46:36 +0300
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"jbsjabda", "email"=>"hghfadf", "password"=>"[FILTERED]"}, "commit"=>"Submit", "id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:26:in `update'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.2ms | Allocations: 1823)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-09 16:46:36 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  Rendered users/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 952)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 3792)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 4245)
+
+
+Started GET "/users/7/edit" for 127.0.0.1 at 2021-04-09 16:46:37 +0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 2.9ms | Allocations: 695)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 4089)
+Completed 200 OK in 18ms (Views: 12.5ms | ActiveRecord: 0.3ms | Allocations: 5075)
+
+
+Started PATCH "/users/7" for 127.0.0.1 at 2021-04-09 16:46:47 +0300
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"aaadf", "email"=>"asda2", "password"=>"[FILTERED]"}, "commit"=>"Submit", "id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:26:in `update'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `update'
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "username" = ?, "email" = ?, "password" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["username", "aaadf"], ["email", "asda2"], ["password", "dasasdasd"], ["updated_at", "2021-04-09 13:46:47.976025"], ["id", 7]]
+  ↳ app/controllers/users_controller.rb:27:in `update'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `update'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 18ms (ActiveRecord: 2.8ms | Allocations: 5092)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-09 16:46:47 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  Rendered users/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 950)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 3794)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.2ms | Allocations: 4247)
+
+
+Started GET "/users/6/edit" for 127.0.0.1 at 2021-04-09 16:46:51 +0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 4.0ms | Allocations: 695)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 4069)
+Completed 200 OK in 21ms (Views: 16.4ms | ActiveRecord: 0.4ms | Allocations: 5091)
+
+
+Started PATCH "/users/6" for 127.0.0.1 at 2021-04-09 16:46:56 +0300
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"hjgdsjhdf21312", "email"=>"hsgdshsad", "password"=>"[FILTERED]"}, "commit"=>"Submit", "id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:26:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `update'
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "username" = ?, "email" = ?, "password" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["username", "hjgdsjhdf21312"], ["email", "hsgdshsad"], ["password", "afsa"], ["updated_at", "2021-04-09 13:46:56.521907"], ["id", 6]]
+  ↳ app/controllers/users_controller.rb:27:in `update'
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `update'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 16ms (ActiveRecord: 3.6ms | Allocations: 5039)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-09 16:46:56 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  Rendered users/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 950)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 3784)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.3ms | Allocations: 4237)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2021-04-09 16:46:59 +0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.6ms | Allocations: 695)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 4105)
+Completed 200 OK in 16ms (Views: 11.3ms | ActiveRecord: 0.2ms | Allocations: 5091)
+
+
+Started PATCH "/users/1" for 127.0.0.1 at 2021-04-09 16:47:03 +0300
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"fadfsf1231", "email"=>"23123dfas", "password"=>"[FILTERED]"}, "commit"=>"Submit", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:26:in `update'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `update'
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "username" = ?, "email" = ?, "password" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["username", "fadfsf1231"], ["email", "23123dfas"], ["password", "afasd"], ["updated_at", "2021-04-09 13:47:03.836868"], ["id", 1]]
+  ↳ app/controllers/users_controller.rb:27:in `update'
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `update'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 18ms (ActiveRecord: 3.1ms | Allocations: 5043)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-09 16:47:03 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  Rendered users/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 950)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 3784)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.4ms | Allocations: 4237)
+
+
+Started GET "/users/3/edit" for 127.0.0.1 at 2021-04-09 16:47:08 +0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 3.5ms | Allocations: 695)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 4105)
+Completed 200 OK in 17ms (Views: 12.3ms | ActiveRecord: 0.2ms | Allocations: 5091)
+
+
+Started GET "/users/4/edit" for 127.0.0.1 at 2021-04-09 16:47:12 +0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 1.7ms | Allocations: 695)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 4103)
+Completed 200 OK in 16ms (Views: 11.3ms | ActiveRecord: 0.3ms | Allocations: 5090)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-09 16:50:24 +0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:7
+  Rendered users/index.html.erb within layouts/application (Duration: 16.8ms | Allocations: 4965)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.9ms | Allocations: 10347)
+Completed 200 OK in 45ms (Views: 33.5ms | ActiveRecord: 1.5ms | Allocations: 14023)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-09 16:50:25 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:7
+  Rendered users/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 976)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 3812)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.4ms | Allocations: 4279)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2021-04-09 16:50:26 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1729)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 5129)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 0.0ms | Allocations: 5756)
+
+
+Started POST "/users" for 127.0.0.1 at 2021-04-09 16:50:41 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"lastone", "email"=>"adsfasad", "password"=>"[FILTERED]"}, "commit"=>"Submit"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:14:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "lastone"], ["email", "adsfasad"], ["password", "441241"], ["created_at", "2021-04-09 13:50:42.001391"], ["updated_at", "2021-04-09 13:50:42.001391"]]
+  ↳ app/controllers/users_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:14:in `create'
+Redirected to http://127.0.0.1:3000/users/new
+Completed 302 Found in 100ms (ActiveRecord: 2.9ms | Allocations: 5233)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2021-04-09 16:50:42 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 663)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 3496)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 3956)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2021-04-09 16:51:26 +0300
+Processing by UsersController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:8:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 793)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 3660)
+Completed 200 OK in 13ms (Views: 5.6ms | ActiveRecord: 0.7ms | Allocations: 8310)
+
+
+Started POST "/users" for 127.0.0.1 at 2021-04-09 16:51:34 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"lats", "email"=>"adfs", "password"=>"[FILTERED]"}, "commit"=>"Submit"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:14:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "lats"], ["email", "adfs"], ["password", "asf"], ["created_at", "2021-04-09 13:51:34.163953"], ["updated_at", "2021-04-09 13:51:34.163953"]]
+  ↳ app/controllers/users_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:14:in `create'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 17ms (ActiveRecord: 3.1ms | Allocations: 4582)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-09 16:51:34 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:7
+  Rendered users/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 3951)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.4ms | Allocations: 4427)
+
+
+Started GET "/users/9/edit" for 127.0.0.1 at 2021-04-09 16:51:35 +0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 3926)
+Completed 200 OK in 17ms (Views: 7.6ms | ActiveRecord: 0.4ms | Allocations: 6165)
+
+
+Started PATCH "/users/9" for 127.0.0.1 at 2021-04-09 16:51:40 +0300
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"lastonesdfasf", "email"=>"adsfasadsadfs", "password"=>"[FILTERED]"}, "commit"=>"Update", "id"=>"9"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:26:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `update'
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "username" = ?, "email" = ?, "password" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["username", "lastonesdfasf"], ["email", "adsfasadsadfs"], ["password", "asdfs"], ["updated_at", "2021-04-09 13:51:40.869156"], ["id", 9]]
+  ↳ app/controllers/users_controller.rb:27:in `update'
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `update'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 17ms (ActiveRecord: 3.2ms | Allocations: 5186)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-09 16:51:40 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:7
+  Rendered users/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1034)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 3868)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.2ms | Allocations: 4321)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-09 16:53:16 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/users/index.html.erb:7
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:7
+  Rendered users/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 4711)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 7587)
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.9ms | Allocations: 8683)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2021-04-09 16:53:17 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 766)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 3587)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 4092)
+
+
+Started POST "/users" for 127.0.0.1 at 2021-04-09 16:53:20 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"fdasdaf", "email"=>"asdfasdf", "password"=>"[FILTERED]"}, "commit"=>"Submit"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:14:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "fdasdaf"], ["email", "asdfasdf"], ["password", "sadfasd"], ["created_at", "2021-04-09 13:53:20.915793"], ["updated_at", "2021-04-09 13:53:20.915793"]]
+  ↳ app/controllers/users_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:14:in `create'
+Redirected to 
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 4.0ms | Allocations: 6593)
+
+
+  
+NoMethodError (undefined method `root_path_url' for #<UsersController:0x00000000009f38>
+Did you mean?  root_path):
+  
+app/controllers/users_controller.rb:15:in `create'
+Started GET "/" for 127.0.0.1 at 2021-04-09 16:53:35 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/users/index.html.erb:7
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:7
+  Rendered users/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 4797)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 7704)
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 1.3ms | Allocations: 8803)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2021-04-09 16:53:38 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 766)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 4190)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.0ms | Allocations: 4661)
+
+
+Started POST "/users" for 127.0.0.1 at 2021-04-09 16:53:41 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"asdfasf", "email"=>"asdfasdf", "password"=>"[FILTERED]"}, "commit"=>"Submit"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:14:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "asdfasf"], ["email", "asdfasdf"], ["password", "sadfsdfd"], ["created_at", "2021-04-09 13:53:41.858361"], ["updated_at", "2021-04-09 13:53:41.858361"]]
+  ↳ app/controllers/users_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:14:in `create'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 15ms (ActiveRecord: 3.3ms | Allocations: 4585)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-09 16:53:41 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:7
+  Rendered users/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1101)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 3935)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.2ms | Allocations: 4396)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-09 16:55:41 +0300
+Processing by UsersController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:7
+  Rendered users/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 3582)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 6458)
+Completed 200 OK in 21ms (Views: 15.3ms | ActiveRecord: 1.1ms | Allocations: 9393)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-09 16:55:55 +0300
+Processing by UsersController#index as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:7
+  Rendered users/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1096)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 3930)
+Completed 200 OK in 13ms (Views: 9.5ms | ActiveRecord: 0.5ms | Allocations: 4968)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2021-04-09 16:58:06 +0300
+Processing by UsersController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:9:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 793)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 3650)
+Completed 200 OK in 15ms (Views: 6.9ms | ActiveRecord: 0.7ms | Allocations: 8221)
+
+
+Started POST "/users" for 127.0.0.1 at 2021-04-09 16:58:08 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"asdas", "email"=>"asdasd", "password"=>"[FILTERED]"}, "commit"=>"Submit"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "asdas"], ["email", "asdasd"], ["password", "sad"], ["created_at", "2021-04-09 13:58:08.992987"], ["updated_at", "2021-04-09 13:58:08.992987"]]
+  ↳ app/controllers/users_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:15:in `create'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 14ms (ActiveRecord: 2.4ms | Allocations: 4599)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-09 16:58:09 +0300
+Processing by UsersController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:7
+  Rendered users/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1183)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 4017)
+Completed 200 OK in 12ms (Views: 8.9ms | ActiveRecord: 0.5ms | Allocations: 5137)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-09 17:05:35 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/users/index.html.erb:7
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:7
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:12
+  Rendered users/index.html.erb within layouts/application (Duration: 10.3ms | Allocations: 5320)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 8377)
+Completed 200 OK in 22ms (Views: 19.3ms | ActiveRecord: 0.7ms | Allocations: 10086)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-09 17:06:05 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:10
+  Rendered users/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 1969)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 5037)
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.5ms | Allocations: 6249)
+
+
+Started GET "/users/11/edit" for 127.0.0.1 at 2021-04-09 17:06:08 +0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1188)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 4598)
+Completed 200 OK in 19ms (Views: 14.5ms | ActiveRecord: 0.5ms | Allocations: 5854)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-09 17:06:27 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:10
+  Rendered users/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 1778)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 4612)
+Completed 200 OK in 21ms (Views: 17.8ms | ActiveRecord: 1.0ms | Allocations: 5065)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2021-04-09 17:06:35 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1053)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 4474)
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 0.0ms | Allocations: 5067)
+
+
+Started POST "/users" for 127.0.0.1 at 2021-04-09 17:06:48 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"lastoneNOW", "email"=>"asdfasfasdfadsfas", "password"=>"[FILTERED]"}, "commit"=>"Submit"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:14:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "lastoneNOW"], ["email", "asdfasfasdfadsfas"], ["password", "ddfasfadsfsadfsd"], ["created_at", "2021-04-09 14:06:48.401011"], ["updated_at", "2021-04-09 14:06:48.401011"]]
+  ↳ app/controllers/users_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:14:in `create'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 20ms (ActiveRecord: 3.4ms | Allocations: 4556)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-09 17:06:48 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:10
+  Rendered users/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1811)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 4645)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.5ms | Allocations: 5098)
+
+
+Started GET "/users/14/edit" for 127.0.0.1 at 2021-04-09 17:06:53 +0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (Duration: 2.4ms | Allocations: 695)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 3516)
+Completed 200 OK in 15ms (Views: 10.1ms | ActiveRecord: 0.3ms | Allocations: 4503)
+
+
+Started PATCH "/users/14" for 127.0.0.1 at 2021-04-09 17:07:07 +0300
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"username"=>"randomrandom", "email"=>"asdfasfasdfadsfadsdsfas", "password"=>"[FILTERED]"}, "commit"=>"Update", "id"=>"14"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:26:in `update'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `update'
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "username" = ?, "email" = ?, "password" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["username", "randomrandom"], ["email", "asdfasfasdfadsfadsdsfas"], ["password", "asdfasfasads"], ["updated_at", "2021-04-09 14:07:07.560345"], ["id", 14]]
+  ↳ app/controllers/users_controller.rb:27:in `update'
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `update'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 23ms (ActiveRecord: 4.4ms | Allocations: 5060)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-09 17:07:07 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:6
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:10
+  Rendered users/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 1811)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 4645)
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.7ms | Allocations: 5098)
+
+
