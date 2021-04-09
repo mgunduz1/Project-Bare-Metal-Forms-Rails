@@ -1,4 +1,4 @@
-# Micro-Reddit
+# Ruby On Rails Forms
 
 ## Prerequisites
 - Ruby (+3)
