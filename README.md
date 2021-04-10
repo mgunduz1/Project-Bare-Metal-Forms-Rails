@@ -23,6 +23,7 @@ $ git clone git@github.com:mgunduz1/Project-Bare-Metal-Forms-Rails.git
 $ cd Project-Bare-Metal-Forms-Rails
 $ bundle install
 $ yarn install --check-files
+$ rails db:create
 $ rails db:migrate
 $ rails s
 ```
